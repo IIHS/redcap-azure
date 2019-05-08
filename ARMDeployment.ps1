@@ -8,7 +8,7 @@ $version = 0;
 #Please review the azuredeploy.json file for available options
 $RGName        = "<YOUR RESOURCE GROUP>"
 $DeployRegion  = "<SELECT AZURE REGION>"
-$AssetLocation = "https://github.com/vanderbilt-redcap/redcap-azure/blob/master/azuredeploy.json"
+$AssetLocation = "https://github.com/IIHS/redcap-azure/blob/master/azuredeploy.json"
 
 $parms = @{
 
@@ -28,13 +28,13 @@ $parms = @{
     "databaseForMySqlFamily"      = "Gen5";
     "databaseForMySqlCores"       = 2;
     "mysqlVersion"                = "5.7";
-    
+
     #Azure Storage
     "storageType"                 = "Standard_LRS";
     "storageContainerName"        = "redcap";
 
     #GitHub
-    "repoURL"                     = "https://github.com/vanderbilt-redcap/redcap-azure.git";
+    "repoURL"                     = "https://github.com/IIHS/redcap-azure.git";
     "branch"                      = "master";
 }
 #END DEPLOYMENT OPTIONS

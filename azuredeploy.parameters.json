@@ -1,51 +1,51 @@
 {
-  "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentParameters.json#",
-  "contentVersion": "1.0.0.0",
-  "parameters": {
-    "siteName": {
-      "value": null
-    },
-    "administratorLogin": {
-      "value": null
-    },
-    "administratorLoginPassword": {
-      "value": null
-    },
-    "redcapAppZip": {
-      "value": null
-    },
-    "databaseSkuSizeMB": {
-      "value": 5120
-    },
-    "databaseForMySqlTier": {
-      "value": "GeneralPurpose"
-    },
-    "databaseForMySqlFamily": {
-      "value": "Gen5"
-    },
-    "databaseForMySqlCores": {
-      "value": 2
-    },
-    "mysqlVersion": {
-      "value": "5.7"
-    },
-    "storageType": {
-      "value": "Standard_LRS"
-    },
-    "storageContainerName": {
-      "value": "redcap"
-    },
-    "clientId": {
-      "value": "N/A"
-    },
-    "tenantDomainName": {
-      "value": "N/A"
-    },
-    "repoURL": {
-      "value": "https://github.com/vanderbilt-redcap/redcap-azure.git"
-    },
-    "branch": {
-      "value": "master"
+    "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "siteName": {
+            "value": null
+        },
+        "administratorLogin": {
+            "value": null
+        },
+        "administratorLoginPassword": {
+            "value": null
+        },
+        "redcapAppZip": {
+            "value": null
+        },
+        "databaseSkuSizeMB": {
+            "value": 5120
+        },
+        "databaseForMySqlTier": {
+            "value": "GeneralPurpose"
+        },
+        "databaseForMySqlFamily": {
+            "value": "Gen5"
+        },
+        "databaseForMySqlCores": {
+            "value": 2
+        },
+        "mysqlVersion": {
+            "value": "5.7"
+        },
+        "storageType": {
+            "value": "Standard_LRS"
+        },
+        "storageContainerName": {
+            "value": "redcap"
+        },
+        "clientId": {
+            "value": "N/A"
+        },
+        "tenantDomainName": {
+            "value": "N/A"
+        },
+        "repoURL": {
+            "value": "https://github.com/IIHS/redcap-azure.git"
+        },
+        "branch": {
+            "value": "master"
+        }
     }
-  }
 }

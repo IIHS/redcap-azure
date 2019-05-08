@@ -23,7 +23,7 @@ function Main {
 
         Log("Getting ZIP file headers")
         $response = Invoke-WebRequest $zipUri -Method Head -UseBasicParsing
-        $filename = ($response.Headers["Content-Disposition"] | Select-String -Pattern 'filename="([^"]+)"').Matches[0].Groups[0].Value
+        $filename = ($response.Headers["Content-Disposition"] | Select-String -Pattern 'filename="([^"]+)"').Matches[0].Groups[1].Value
 
         Log("Checking ZIP file name and version")
         $filePath = "$path\$filename"
